@@ -17,5 +17,15 @@ export default defineConfig([
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
+    rules: {
+      'max-lines': [
+        'error',
+        {
+          max: 120,
+          skipBlankLines: true,
+          skipComments: true,
+        },
+      ],
+    },
   },
 ])
